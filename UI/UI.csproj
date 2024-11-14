@@ -55,6 +55,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
@@ -105,6 +106,30 @@
     </Compile>
     <Compile Include="FormCheckOut.Designer.cs">
       <DependentUpon>FormCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomers.Designer.cs">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDaftar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDaftar.Designer.cs">
+      <DependentUpon>FormDaftar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLupaPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLupaPassword.Designer.cs">
+      <DependentUpon>FormLupaPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMyOrder.Designer.cs">
+      <DependentUpon>FormMyOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNewOderSetrika.cs">
       <SubType>Form</SubType>
@@ -164,6 +189,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCheckOut.resx">
       <DependentUpon>FormCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomers.resx">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDaftar.resx">
+      <DependentUpon>FormDaftar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLupaPassword.resx">
+      <DependentUpon>FormLupaPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMyOrder.resx">
+      <DependentUpon>FormMyOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewOderSetrika.resx">
       <DependentUpon>FormNewOderSetrika.cs</DependentUpon>
@@ -242,6 +279,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Group 5.png" />
+    <None Include="Resources\My Order.png" />
+    <None Include="Resources\Group 87.png" />
+    <None Include="Resources\Customers.png" />
+    <None Include="Resources\Group 86.png" />
+    <None Include="Resources\Group 85.png" />
+    <None Include="Resources\Group 84.png" />
+    <None Include="Resources\Group 82.png" />
     <None Include="Resources\Order.png" />
     <None Include="Resources\Group 81.png" />
     <None Include="Resources\Ellipse 3.png" />

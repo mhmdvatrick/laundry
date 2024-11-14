@@ -12,8 +12,8 @@ namespace UI
 {
     public partial class FormOrder : Form
     {
-        FromNewOrderReguler klik;
         FormCheckOut proses;
+        FormMyOrder proses1;
         public FormOrder()
         {
             InitializeComponent();
@@ -59,7 +59,23 @@ namespace UI
 
         private void guna2PictureBox14_Click(object sender, EventArgs e)
         {
-
+            pnlOrder.Visible = false;
+            if (proses1 == null)
+            {
+                proses1 = new FormMyOrder();
+                proses1.FormClosed += proses1_FormClosed;
+                this.Hide();
+                proses1.Dock = DockStyle.Fill;
+                proses1.Show();
+            }
+            else
+            {
+                proses1.Activate();
+            }
+        }
+        private void proses1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            proses1 = null;
         }
 
         private void guna2PictureBox13_Click(object sender, EventArgs e)

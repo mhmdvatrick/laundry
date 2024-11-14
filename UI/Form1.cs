@@ -38,7 +38,9 @@ namespace UI
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            FormLupaPassword Form = new FormLupaPassword();
+            Form.ShowDialog();
         }
 
         private void guna2PictureBox3_Click(object sender, EventArgs e)
@@ -62,6 +64,13 @@ namespace UI
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDaftar Form = new FormDaftar();
+            Form.ShowDialog();
         }
     }
 }
